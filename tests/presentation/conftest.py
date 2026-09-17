@@ -11,7 +11,7 @@ from tests.conftest import FakeUnitOfWork
 JWT_SECRET = "test-secret-key-that-is-long-enough"
 
 _test_settings = Settings(
-    database_url="postgresql+asyncpg://fake:fake@localhost/fake",
+    # database_url="postgresql+asyncpg://fake:fake@localhost/fake",
     jwt_secret=JWT_SECRET,
     jwt_algorithm="HS256",
     jwt_expire_hours=24,
